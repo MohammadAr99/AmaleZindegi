@@ -1,0 +1,2 @@
+# AmaleZindegi
+QuraneAmaleZindegi
