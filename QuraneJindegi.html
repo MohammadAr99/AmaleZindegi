@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Habib</title>
+<style type="text/css">
+
+*{
+  margin: 0;
+  padding: 0;
+
+ }
+ 
+ body{
+ background-image: radial-gradient();	
+ 
+ }
+ 	
+ /*--------------------
+   Main Content Works
+ ----------------------*/ 	
+ .Content_Card{
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  grid-row-gap: 30px;
+  
+  }
+  
+  .Content_Button{
+   height: 110px;
+   width: 125px;
+   border-radius: 20px;
+   border: none;
+   background: ghostwhite;
+   box-shadow: 1px 1px 3px grey;
+   
+   }
+   
+   
+   /*----------------------
+     Content Button Works
+   ------------------------*/ 
+  .Button_Content{
+   display: grid;
+   grid-template-columns: auto;
+   grid-row-gap: 20px;
+   
+   
+   }
+   
+   .Button_Card{
+    height: 460px;
+    width: 100%;
+    overflow: auto;
+  
+    }
+    
+    
+ .Button-items{
+  height: 45px;
+  width: 80%;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 3px grey;
+  border-radius: 3px;
+  margin-left: 10%;
+  margin-top: 20px;
+ 
+  }
+   
+  .Klast{
+   margin-bottom: 10px;
+   
+   }
+   
+  .Special_Content{
+   height: 428px;
+   width: 100%;
+   background-color: white;
+   overflow: auto;
+   
+   }
+   
+  .Special_Card{
+   height: auto;
+   width: 100%;
+   display: grid;
+   grid-template-columns: auto auto;
+   margin-left: 10%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   grid-row-gap: 30px;
+   
+   }
+   
+   
+  .Special_Items{
+   height: 110px;
+   width: 125px;
+   border-radius: 20px;
+   border: none;
+   background-color: whitesmoke;
+   box-shadow: 1px 1px 3px grey;
+   
+   }
+   
+   
+  .Back_Card{
+   height: 45px;
+   width: 100%;
+  
+  
+   }
+   
+  .Go_Btn{
+  padding: 5px 10px;
+  background-color: lavender;
+  border: 1px solid lavender;
+  box-shadow: 1px 1px 3px grey;
+  border-radius: 3px;
+  float: right;
+  position: relative;
+  top: 8px;
+  left: 20px;
+  
+  }
+  
+  .Back_Btn{
+  padding: 5px 10px;
+  background-color: lavender;
+  border: 1px solid lavender;
+  box-shadow: 1px 1px 3px grey;
+  border-radius: 3px;
+  float: left;
+  position: relative;
+  top: 8px;
+  left: 40%;
+  
+  }
+   
+</style>
+</head>
+<body>
+
+<div class="Content_Card" id="Content_Card">
+<button class="Content_Button" onclick="Kalima()">Kalima</button>
+<button class="Content_Button" onclick="Namaj()">Namaj</button>
+<button class="Content_Button" onclick="Roja()">Roja</button>
+<button class="Content_Button" onclick="Hajj()">Hajj</button>
+<button class="Content_Button" onclick="Jakat()">Jakat</button>
+<button class="Content_Button" onclick="Quran()">Quran</button>
+<button class="Content_Button" onclick="Hadish()">Hadish</button>
+<button class="Content_Button" onclick="Ejma()">Ejma</button>
+<button class="Content_Button" onclick="Keyas()">Keyas</button>
+<button class="Content_Button" onclick="SpecialAmal()">Special Amal</button>
+</div>
+
+
+<!--..............
+   Kalima Works
+................-->
+<div class="Button_Content" style="display: none;" id="Kalima">
+<div class="Button_Card">
+<button class="Button-items">Kalima Tayiba</button>
+<button class="Button-items">Kalima Shahadat</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items Klast">Kalims</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+
+<!--..............
+    Namaj Works
+................-->
+<div class="Button_Content" style="display: none;" id="Namaj">
+<div class="Button_Card">
+<button class="Button-items">Fajr</button>
+<button class="Button-items">Johor</button>
+<button class="Button-items">Asor</button>
+<button class="Button-items">Magrib</button>
+<button class="Button-items">Juma</button>
+<button class="Button-items">Esrak</button>
+<button class="Button-items">Ababil</button>
+<button class="Button-items"></button>
+<button class="Button-items Klast">Tahajjut</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+<!--..............
+    Roja Works
+................-->
+<div class="Button_Content" style="display: none;" id="Roja">
+<div class="Button_Card">
+<button class="Button-items">Kalima Tayiba</button>
+<button class="Button-items">Kalima Shahadat</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items Klast">Kalims</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+
+<!--..............
+    Hajj Works
+................-->
+<div class="Button_Content" style="display: none;" id="Hajj">
+<div class="Button_Card">
+<button class="Button-items"></button>
+<button class="Button-items">Kalima Shahadat</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items Klast">Kalims</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+<!--..............
+    Jakat Works
+................-->
+<div class="Button_Content" style="display: none;" id="Jakat">
+<div class="Button_Card">
+<button class="Button-items">Kalima Tayiba</button>
+<button class="Button-items">Kalima Shahadat</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items Klast">Kalims</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+
+<!--..............
+   Quran Works
+................-->
+<div class="Button_Content" style="display: none;" id="Quran">
+<div class="Button_Card">
+<button class="Button-items"></button>
+<button class="Button-items">Kalima Shahadat</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items Klast">Kalims</button>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+
+<!--..............
+    Hadis Works
+................-->
+<div class="Button_Content" style="display: none;" id="Hadish">
+<div class="Button_Card">
+<button class="Button-items">good</button>
+<button class="Button-items">Kalima Shahadat</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items Klast">Kalims</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+<!--..............
+   Ejma Works
+................-->
+<div class="Button_Content" style="display: none;" id="Ejma">
+<div class="Button_Card">
+<button class="Button-items"></button>
+<button class="Button-items">Kalima Shahadat</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items Klast">Kalims</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+<!--..............
+    Keyas Works
+................-->
+<div class="Button_Content" style="display: none;" id="Keyas">
+<div class="Button_Card">
+<button class="Button-items"></button>
+<button class="Button-items">Kalima Shahadat</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items Klast">Kalims</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+<!--...............
+    Special Amal
+.................-->
+<div class="Button_Content" style="display: none;" id="Hadish">
+<div class="Button_Card">
+<button class="Button-items">good</button>
+<button class="Button-items">Kalima Shahadat</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items">Kalims</button>
+<button class="Button-items Klast">Kalims</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+
+
+<!--...............
+    Special Amal
+.................-->
+<div class="Special_Content" id="Special_Content" style="display: block;">
+<div class="Special_Card">
+<button class="Special_Items" onclick="Kalima()">Ayatul Kurshi</button>
+<button class="Special_Items" onclick="Namaj()">Sat Salam</button>
+<button class="Special_Items" onclick="Ka()">Sura Hasor</button>
+<button class="Special_Items" onclick="Kalima()">Hajj</button>
+<button class="Special_Items" onclick="Kalima()">Jakat</button>
+<button class="Special_Items" onclick="Kalima()">Quran</button>
+<button class="Special_Items" onclick="Kalima()">Hadish</button>
+<button class="Special_Items" onclick="Kalima()">Ejma</button>
+<button class="Special_Items" onclick="Kalima()">Keyas</button>
+<button class="Special_Items" onclick="SpecialAmal()">Special Amal</button>
+</div>
+<div class="Back_Card">
+<button class="Back_Btn" onclick="BackBtn()">Back</button>
+</div>
+</div>
+
+<!-----------------
+   Script Works
+------------------>
+<script>
+function Kalima(){
+ var buttonCard = document.querySelector("#Kalima");
+ var contentCard = document.querySelector(".Content_Card");
+  
+  buttonCard.style.display="block";
+  contentCard.style.display="none";
+ 
+ 
+ }
+ 
+ 
+ function Namaj(){
+ var buttonCard = document.querySelector("#Namaj");
+ var contentCard = document.querySelector(".Content_Card");
+ 
+     buttonCard.style.display="block";
+     contentCard.style.display="none";
+ 
+ }
+ 
+ 
+ function Roja(){
+ var buttonCard = document.querySelector("#Kalima");
+ var contentCard = document.querySelector(".Content_Card");
+ 
+     buttonCard.style.display="block";
+     contentCard.style.display="none";
+ 
+ 
+ }
+ 
+ 
+ function Hajj(){
+ var buttonCard = document.querySelector("#Namaj");
+ var contentCard = document.querySelector(".Content_Card");
+ 
+     buttonCard.style.display="block";
+     contentCard.style.display="none";
+ 
+ 
+ }
+ 
+ 
+ function Jakat(){
+ var buttonCard = document.querySelector("#Kalima");
+ var contentCard = document.querySelector(".Content_Card");
+ 
+     buttonCard.style.display="block";
+     contentCard.style.display="none";
+ 
+ 
+ }
+ 
+ 
+ function Quran(){
+ var buttonCard = document.querySelector("#Namaj");
+ var contentCard = document.querySelector(".Content_Card");
+ 
+     buttonCard.style.display="block";
+     contentCard.style.display="none";
+ 
+ 
+ }
+ 
+ 
+ function Hadish(){
+ var Hadish = document.querySelector(".Hadish");
+ var contentCard = document.querySelector(".Content_Card");
+ 
+     Hadish.style.display="block";
+     contentCard.style.display="none";
+ 
+ 
+ }
+ 
+ 
+ function Ejma(){
+ var buttonCard = document.querySelector("#Namaj");
+ var contentCard = document.querySelector(".Content_Card");
+ 
+     buttonCard.style.display="block";
+     contentCard.style.display="none";
+ 
+ }
+ 
+ 
+ function Keyas(){
+ var buttonCard = document.querySelector("#Kalima");
+ var contentCard = document.querySelector(".Content_Card");
+ 
+     buttonCard.style.display="block";
+     contentCard.style.display="none";
+ 
+ 
+ }
+ 
+ 
+ function SpecialAmal(){
+ var SpecialAmal = document.querySelector("#SpecialAmal");
+ var contentCard = document.querySelector(".Content_Card");
+ 
+     SpecialAmal.style.display="block";
+     contentCard.style.display="none";
+ 
+ 
+  }
+ 
+
+ function BackBtn(){
+ var contentCard = document.querySelector(".Content_Card");
+     contentCard.style.display="block";
+     contentCard.style.display="grid";
+     contentCard.style.gridTemplateColumns="auto auto";
+     contentCard.style.gridRowGap="20px";
+ 
+ 
+ var Kalima = document.querySelector("#Kalima");
+ var Namaj = document.querySelector("#Namaj");
+ var Roja = document.querySelector("#Roja");
+ var Hajj = document.querySelector("#Hajj");
+ var Jakat = document.querySelector("#Jakat");
+ var Quran = document.querySelector("#Quran");
+ var Hadish = document.querySelector("#Hadish");
+ var Ejma = document.querySelector("#Ejma");
+ var Keyas = document.querySelector("#Keyas");
+ var SpecialAmal = document.querySelector("#SpecialAmal");
+ 
+ 
+ Kalima.style.display="none";
+ Namaj.style.display="none";
+ Roja.style.display="none";
+ Hajj.style.display="none";
+ Jakat.style.display="none";
+ Quran.style.display="none";
+ Hadish.style.display="none";
+ Ejma.style.display="none";
+ Keyas.style.display="none";
+ SpecialAmal.style.display="none";
+ 
+
+ }
+ 
+ 
+</script>
+
+</body>
+</html>
